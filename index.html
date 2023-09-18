@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome page</title>
+    
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+            background-color: yellow;
+        }
+
+        input[type="text"],
+        input[type="radio"],
+        input[type="email"],
+        input[type="date"] {
+            font-size: 18px;
+            font-style: bold;
+
+        }
+
+        input[type="radio"]#blue {
+            accent-color: blue;
+            width: 15px;
+            height: 15px;
+        }
+
+        input[type="radio"]#purple {
+            accent-color: purple;
+            width: 15px;
+            height: 15px;
+        }
+
+        input[type="radio"]#red {
+            accent-color: red;
+            width: 15px;
+            height: 15px;
+        }
+        input[type="submit"]{
+           width: 200px;
+           height: 50px;
+           display: block; /* Make the button a block element */
+           margin-left: 50px;
+           
+          
+
+        }
+
+        form {
+
+            width: 25rem;
+            margin: auto;
+            color: whitesmoke;
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: black;
+            border-radius: 12px;
+            border: 1px solid white;
+
+            padding-left: 100px;
+            padding-top: 10px;
+            
+
+        }
+
+        body {
+            background-image: url("https://img.freepik.com/premium-vector/night-sky-background-with-stars-mountains_697972-594.jpg?w=1380");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Submission Form</h1>
+    <div>
+        <form action="success.html" method="get">
+            First Name : <input type="text" name="firstname" placeholder="Enter First name" required /><br><br>
+            Last Name : <input type="text" name="lastname" placeholder="Enter Last name" required /><br><br>
+            Gender : <input type="radio" name="gender" id="blue">Male
+            <input type="radio" name="gender" id="purple"> Female
+            <input type="radio" name="gender" id="red" checked>Other
+            <br><br>
+            Email id : <input type="email" name="email" placeholder="Enter Email id " required><br><br>
+            Date of Birth : <input type="date" name="DOB"><br><br>
+            Address : <br>
+            <textarea type="text" name="address" cols="40" rows="4"></textarea><br><br>
+
+            <input style="font-size: 25px; color: white; background-color: rgb(15, 0, 128);" type="submit"
+                value="Submit"><br><br><br>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
